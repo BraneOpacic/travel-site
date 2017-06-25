@@ -1,0 +1,17 @@
+/*postcss-import package installed so import will be treated as css in MAIN css file*/
+@import "normalize.css";
+
+@import "base/_variables";
+@import "base/_mixins";
+/*moved global rules under variables so we can use $mainOrange color in global styles and not get undefined.*/
+@import "base/_global";
+@import "modules/_large-hero";
+@import "modules/_btn";
+@import "modules/_wrapper";
+@import "modules/_page-section";
+@import "modules/_headline";
+@import "modules/_row";
+@import "modules/_generic-content-container";
+
+
+

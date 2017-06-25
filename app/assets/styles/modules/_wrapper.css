@@ -1,0 +1,27 @@
+.wrapper {
+	/*adding overflow because of column layout and negative margin on .row */
+	overflow: hidden;
+	padding-left: 18px;
+	padding-right: 18px;
+	/*we added 36 to 1200px max-width couse of box sizing border box and the two paddings above made the content smaller*/
+	max-width: 1236px;
+	margin-left: auto;
+	margin-right: auto;
+
+	&--medium {
+		max-width: 976px;
+	}
+
+	.wrapper {
+		padding-right: 0;
+		padding-left: 0;
+	}
+
+	&--b-margin {
+		margin-bottom: 1rem;
+
+		@mixin atSmall {
+			margin-bottom: 3.875rem;
+		}
+	}
+}
